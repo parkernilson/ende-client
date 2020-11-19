@@ -13,6 +13,7 @@
 		);
 		color: white;
 		min-height: 100vh;
+		box-sizing: border-box;
 		padding-bottom: 64px;
 		width: 100%;
 		display: flex;
