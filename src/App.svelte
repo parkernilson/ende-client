@@ -12,7 +12,8 @@
 			rgba(254, 0, 255, 1) 100%
 		);
 		color: white;
-		height: 100vh;
+		min-height: 100vh;
+		padding-bottom: 64px;
 		width: 100%;
 		display: flex;
 		justify-content: center;
