@@ -4,6 +4,7 @@
         box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.3);
         border-radius: 16px;
         background-color: rgba(246, 246, 246, 1);
+        margin-bottom: 32px;
     }
 
     .input-container {

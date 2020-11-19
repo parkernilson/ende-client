@@ -4,6 +4,13 @@
 		font-family: Lato, sans-serif;
 	}
 
+	:global(a) {
+		color: lightgreen;
+	}
+	:global(a):visited {
+		color: lightgreen;
+	}
+
 	.main-container {
 		background: linear-gradient(
 			180deg, 
@@ -65,5 +72,8 @@
 		<h2 class="subtitle">English to German</h2>
 		<h3 class="byline">by, Parker Nilson</h3>
 		<TranslatorBox />
+		<h2>How does it work?</h2>
+		<p>This project uses a pretrained machine learning model from <a href="https://opennmt.net/">OpenNMT</a>
+		to perform translation from English to German.</p>
 	</div>
 </div>
