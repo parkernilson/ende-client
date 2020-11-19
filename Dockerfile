@@ -20,14 +20,9 @@ FROM development AS build
 RUN npm run build
 
 ###
-# production
-FROM nginx:stable AS production
+# final stage
+FROM alpine:latest AS files-only
 
-# overwrite nginx default config
-COPY nginx/nginx.conf /etc/nginx/nginx.conf
-COPY nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /code/public /public
 
-# transfer the public files from the built svelte app to the public directory of the nginx server
-COPY --from=build /code/public/. /usr/share/nginx/html/.
-
-RUN chown nginx.nginx /usr/share/nginx/html/ -R
+CMD ["tail", "-f", "/dev/null"]
