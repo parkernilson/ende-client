@@ -12,12 +12,7 @@
 	}
 
 	.main-container {
-		background: linear-gradient(
-			180deg, 
-			rgb(29, 150, 163, 1) 0%, 
-			rgba(68, 64, 177, 1) 60%, 
-			rgba(254, 0, 255, 1) 100%
-		);
+		background: linear-gradient(160deg, orange, purple 90%);
 		color: white;
 		min-height: 100vh;
 		box-sizing: border-box;
@@ -46,6 +41,12 @@
 		font-weight: 700;
 		-webkit-text-stroke: 1px black;
 		margin-bottom: 0;
+	}
+
+	@media only screen and (max-width: 600px) {
+		.title {
+			font-size: 54px;
+		}
 	}
 
 	.subtitle {
