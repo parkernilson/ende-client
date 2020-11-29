@@ -5,14 +5,14 @@
 	}
 
 	:global(a) {
-		color: lightgreen;
+		color: #0c2091;
 	}
 	:global(a):visited {
-		color: lightgreen;
+		color: #0c2091;
 	}
 
 	.main-container {
-		background: linear-gradient(160deg, orange, purple 90%);
+		background: #6981ff;
 		color: white;
 		min-height: 100vh;
 		box-sizing: border-box;

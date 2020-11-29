@@ -39,7 +39,7 @@
         height: 32px;
         margin: 0;
         border-radius: 16px;
-        background-color: rgba(187, 127, 255, 1);
+        background-color: #526dff;
         box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.3);
         border: none;
         color: white;
